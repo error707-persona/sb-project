@@ -38,7 +38,7 @@ header
 .hero{
   margin: auto;
   margin-top: 7rem;
-  
+  letter-spacing: 0.2rem;
   max-width: 1500px;
 }
 
@@ -50,6 +50,7 @@ header
   font-size: 4rem;
   font-weight: 1000;
   margin-top: 5px;
+  
 }
 
 .hero__subtitle{
@@ -78,6 +79,12 @@ header
   justify-content: center;
 }
 
+/* 
+=====
+card
+=====
+
+*/
 .card{
   /* border: 1px solid black; */
   margin-top: 4rem;
@@ -96,8 +103,8 @@ header
   background-color: #266fce;
   width: 80px;
   height: 80px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center;*/
   border-radius: 0.5rem;
   padding: 4rem;
   
@@ -108,7 +115,7 @@ header
   margin-left: 5%;
   font-size: x-large;
   text-transform: uppercase;
-  
+  margin-bottom: 2rem;
 }
 
 .card__icon-container{
@@ -117,10 +124,12 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .card__content{
   line-height: 1.6rem;
+  letter-spacing: 0.1rem;
 }
 
 
