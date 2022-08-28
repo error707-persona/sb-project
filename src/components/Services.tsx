@@ -2,109 +2,103 @@ import { IconLuggage } from '@tabler/icons'
 import React from 'react'
 
 const Services = () => {
+    const services = [
+        {
+            id:"business",
+            icon:<IconLuggage style={{color:'white'}}/>,
+            title:"Business Consulting",
+            paragraph:"Some of our unique offers are:",
+            list:[ 
+            "Business Process Re-engineering",
+            "Branch/Franchise Setup for Geographical expansion",
+            "Profit Engineering",
+            "Budgeting and Cost controls"
+            ]
+        },
+        {
+            id:"loans",
+            icon:<IconLuggage style={{color:'white'}}/>,
+            title:"Loan Syndication",
+            paragraph:"Some of our unique offers are:",
+            list:[ 
+            "Business Process Re-engineering",
+            "Branch/Franchise Setup for Geographical expansion",
+            "Profit Engineering",
+            "Budgeting and Cost controls"
+            ]
+        },
+        {
+            id:"company-valuation",
+            icon:<IconLuggage style={{color:'white'}}/>,
+            title:" Company Valuation",
+            paragraph:"Some of our unique offers are:",
+            list:[ 
+            "Business Process Re-engineering",
+            "Branch/Franchise Setup for Geographical expansion",
+            "Profit Engineering",
+            "Budgeting and Cost controls"
+            ]
+        },
+        {
+            id:"equity-advisory",
+            icon:<IconLuggage style={{color:'white'}}/>,
+            title:"Equity Advisory",
+            paragraph:"Some of our unique offers are:",
+            list:[ 
+            "Business Process Re-engineering",
+            "Branch/Franchise Setup for Geographical expansion",
+            "Profit Engineering",
+            "Budgeting and Cost controls"
+            ]
+        },
+        {
+            id:"ca-services",
+            icon:<IconLuggage style={{color:'white'}}/>,
+            title:"Ca Services",
+            paragraph:"Some of our unique offers are:",
+            list:[ 
+            "Business Process Re-engineering",
+            "Branch/Franchise Setup for Geographical expansion",
+            "Profit Engineering",
+            "Budgeting and Cost controls"
+            ]
+        },
+
+    ]
     return (
         <>
             <div className="services">
                 Our Services
+                
             </div>
+            {services.map((service)=>(
+                
+<div className="card" id={service.id}>
 
-            <div className="card" id="#business">
                 <div className="card__icon-container">
                     <div className="card__icon">
-                        <IconLuggage style={{color:'white'}}/>
+                    {service.icon}
                     </div>
                 </div>
                 <div className="card__content">
                     <div className="card__title">
-                        Business Consulting
+                        {service.title}
                     </div>
-
-                    Some of our unique offers are:
+                    {service.paragraph}
                     <ul>
-                        <li>Business Process Re-engineering</li>
-                        <li>Branch/Franchise Setup for Geographical expansion</li>
-                        <li>Profit Engineering</li>
-                        <li>Budgeting and Cost controls</li>
+                    {service.list.map((item)=>(
+                        <li>{item}</li>
+                    ))}
+                        
+                        
                     </ul>
                 </div>
             </div>
+            ))}
+            
+            
 
-            <div className="card" id="loans">
-                <div className="card__icon-container">
-                    <div className="card__icon">
-                    <IconLuggage width={50} height={50} style={{color:'white'}} />
-                    </div>
-                </div>
-                <div className="card__content">
-                    <div className="card__title">
-                        Loan Syndication
-                    </div>
-                    <ul>
-                        <li>Business Process Re-engineering</li>
-                        <li>Branch/Franchise Setup for Geographical expansion</li>
-                        <li>Profit Engineering</li>
-                        <li>Budgeting and Cost controls</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="card" id="company-valuation">
-                <div className="card__icon-container">
-                    <div className="card__icon">
-                    <IconLuggage width={50} height={50} style={{color:'white'}}/>
-                    </div>
-                </div>
-                <div className="card__content">
-                    <div className="card__title">
-                        Company Valuation
-                    </div>
-                    <ul>
-                        <li>Business Process Re-engineering</li>
-                        <li>Branch/Franchise Setup for Geographical expansion</li>
-                        <li>Profit Engineering</li>
-                        <li>Budgeting and Cost controls</li>
-                    </ul>
-
-                </div>
-            </div>
-            <div className="card" id="equity-advisory">
-                <div className="card__icon-container">
-                    <div className="card__icon">
-                    <IconLuggage width={50} height={50} style={{color:'white'}} />
-                    </div>
-                </div>
-                <div className="card__content">
-                    <div className="card__title">
-                        Equity Advisory
-                    </div>
-                    <ul>
-                        <li>Business Process Re-engineering</li>
-                        <li>Branch/Franchise Setup for Geographical expansion</li>
-                        <li>Profit Engineering</li>
-                        <li>Budgeting and Cost controls</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div className="card" id="ca-services">
-                <div className="card__icon-container">
-                    <div className="card__icon">
-                    <IconLuggage width={50} height={50} style={{color:'white'}}/>
-                    </div>
-                </div>
-                <div className="card__content">
-                    <div className="card__title">
-                        CA Services
-                    </div>
-                    <ul>
-                        <li>Business Process Re-engineering</li>
-                        <li>Branch/Franchise Setup for Geographical expansion</li>
-                        <li>Profit Engineering</li>
-                        <li>Budgeting and Cost controls</li>
-                    </ul>
-                </div>
-
-            </div>
+           
         </>
     )
 }
