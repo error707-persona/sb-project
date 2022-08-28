@@ -8,7 +8,7 @@ const Hero = () => {
                   We are
               </span><br />
               <span className="hero__company">
-                  SB-FINANCIALS
+                  Fangs-FINANCIALS
               </span><br />
               <span className="hero__subtitle">
                   solutions
