@@ -10,8 +10,8 @@ const Header = () => {
                   <a href="#"><IconCoin width={50} height={50} /></a>
                   <ul className="header__list">
                       <li><a href="#">startups</a></li>
-                      <li><a href="#">loans</a></li>
-                      <li><a href="#">services&nbsp; <IconChevronDown/></a></li>
+                      <li><a href="#loans">loans</a></li>
+                      <li><a href="#ca">services&nbsp; <IconChevronDown/></a></li>
                       <li><a href="#">courses</a></li>
                       <li><a href="#">contact us</a></li>
                   </ul>
